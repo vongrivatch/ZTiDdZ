@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en"> <!--hreflang informujacy o jezyku podstrony -->
+
+<head> <!--sekcja head zawierajaca metatagi i skrypty -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="login.css"></link>
+  <script defer src="login.js"></script>
+</head>
+
+<body> <!-- Sekcja body zawierajaca elementy widoczne na podstronie (tu box do logowania)-->
+  <main id="main-holder">
+    <!-- Naglowek typu H1 - najwazniejszy -->
+    <h1 id="login-header">Login</h1> 
+    <!-- obrazek logowania -->
+    <img src="login.png" style = "float:right;width:100px"> 
+    
+    <!-- komunikat wyswietlany po blednym podaniu hasla i/lub loginu w postaci boxu nad polem logowania-->
+    <div id="login-error-msg-holder"> 
+    	<p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+    	
+    <!-- Pola umozliwiajace uzytkownikowi wprowadzenie loginu i nastepnie hasla -->
+    <form id="login-form">
+      <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+      <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+      <input type="submit" value="Login" id="login-form-submit">
+    </form>
+
+  </main>
+</body>
+</html>
